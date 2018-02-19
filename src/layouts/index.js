@@ -8,15 +8,12 @@ import './index.css';
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet>
-      <meta
-        name="description"
-        content="Please Mr. Gove song from the Beelievers"
-      />
+      <meta name="description" content="Mr. Gove song from the Beelievers" />
       <meta
         name="keywords"
-        content="Please Mr. Gove, Beelievers, Michael Gove, bee, pollinator, pesticide"
+        content="Mr. Gove, Beelievers, Michael Gove, bee, pollinator, pesticide"
       />
-      <title>Please Mr. Gove</title>
+      <title>Mr. Gove</title>
       <link
         href="https://fonts.googleapis.com/css?family=Raleway:200,400,700"
         rel="stylesheet"

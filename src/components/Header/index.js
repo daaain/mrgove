@@ -23,7 +23,7 @@ const Header = () => (
             textDecoration: 'none',
           }}
         >
-          Please Mr. Gove
+          Mr. Gove
         </Link>
       </h1>
     </div>
