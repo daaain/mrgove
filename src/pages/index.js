@@ -18,11 +18,15 @@ const ResponsiveFrameContainer = styled.div`
   }
 `;
 
+const socialShareText = encodeURIComponent(
+  'Listen to @TheBeelievers debut single asking #MrGove to keep his pledge to ban neonicotinoid #pesticides & help #SaveTheBees! https://www.thebeelievers.org'
+);
+
 const IndexPage = () => (
   <div>
     <ResponsiveFrameContainer>
       <iframe
-        src="https://www.youtube.com/embed/mjJ4_dccfNw?rel=0"
+        src="https://www.youtube.com/embed/Khed6Ea8QTA?rel=0"
         allow="autoplay; encrypted-media"
         allowfullscreen
       />
@@ -32,7 +36,7 @@ const IndexPage = () => (
       Share the video:{' '}
       <a
         target="_blank"
-        href="https://twitter.com/intent/tweet?text=Listen%20to%20the%20song%20Mr.%20Gove%20from%20The%20Beelievers%2C%20asking%20%40michaelgove%20to%20keep%20up%20his%20pledge%20to%20ban%20neonicotinoid%20pesticides.%20https%3A%2F%2Fwww.thebeelievers.org"
+        href={`https://twitter.com/intent/tweet?text=${socialShareText}`}
       >
         Twitter
       </a>{' '}
@@ -46,15 +50,12 @@ const IndexPage = () => (
       |{' '}
       <a
         target="_blank"
-        href="mailto:test@example.com?subject=Mr.%20Gove%20from%20The%20Beelievers&body=Listen%20to%20the%20song%20Mr.%20Gove%20from%20The%20Beelievers%2C%20asking%20%40michaelgove%20to%20keep%20up%20his%20pledge%20to%20ban%20neonicotinoid%20pesticides.%20https%3A%2F%2Fwww.thebeelievers.org"
+        href={`mailto:test@example.com?subject=Mr.%20Gove%20from%20The%20Beelievers&body=${socialShareText}`}
       >
         Email
       </a>{' '}
       |{' '}
-      <a
-        target="_blank"
-        href="whatsapp://send?text=Listen%20to%20the%20song%20Mr.%20Gove%20from%20The%20Beelievers%2C%20asking%20%40michaelgove%20to%20keep%20up%20his%20pledge%20to%20ban%20neonicotinoid%20pesticides.%20https%3A%2F%2Fwww.thebeelievers.org"
-      >
+      <a target="_blank" href={`whatsapp://send?text=${socialShareText}`}>
         WhatsApp
       </a>
     </p>

@@ -15,7 +15,7 @@ const TemplateWrapper = ({ children }) => (
       />
       <title>Mr. Gove</title>
       <link
-        href="https://fonts.googleapis.com/css?family=Raleway:200,400,700"
+        href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:400,700"
         rel="stylesheet"
       />
     </Helmet>
